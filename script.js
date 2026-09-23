@@ -1,0 +1,62 @@
+let messageInput = document.querySelector('.message-input');
+const sendBtn = document.querySelector('.send-message');
+
+sendBtn.addEventListener('click', () => {
+  const messageInputVal = messageInput.value;
+  const time = dayjs().format('h:mm A');
+
+  if (messageInputVal === '') {
+    return;
+  }
+
+  const chat = `
+    <div class="main">
+      <div class="pic"><i class="fa-solid fa-circle-user"></i>
+      </div>
+      <div class="flex">
+        <div class="name">
+          <p>Sam · ${time}</p>
+        </div>
+        <div class="chat">
+          ${messageInputVal}
+        </div>
+      </div>
+    </div>
+  `
+
+  document.querySelector('.container').innerHTML += chat;
+
+  messageInput.value = '';
+})
+
+
+messageInput.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter') {
+    const time = dayjs().format('h:mm A');
+    const messageInputVal = messageInput.value;
+
+    if (messageInputVal === '') {
+      return;
+    }
+
+    
+    const chat = `
+      <div class="main">
+        <div class="pic"><i class="fa-solid fa-circle-user"></i>
+        </div>
+        <div class="flex">
+          <div class="name">
+            <p>Sam · ${time}</p>
+          </div>
+          <div class="chat">
+            ${messageInputVal}
+          </div>
+        </div>
+      </div>
+    `
+
+    document.querySelector('.container').innerHTML += chat;
+
+    messageInput.value = ''
+  };
+})
