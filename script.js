@@ -1,9 +1,17 @@
 let messageInput = document.querySelector('.message-input');
 const sendBtn = document.querySelector('.send-message');
 
+const names = [
+  'Sam',
+  'Luna',
+  'Nate',
+  'Alex'
+]
+
 sendBtn.addEventListener('click', () => {
   const messageInputVal = messageInput.value;
   const time = dayjs().format('h:mm A');
+  const randomName = names[Math.floor(Math.random() * names.length)];
 
   if (messageInputVal === '') {
     return;
@@ -15,7 +23,7 @@ sendBtn.addEventListener('click', () => {
       </div>
       <div class="flex">
         <div class="name">
-          <p>Sam · ${time}</p>
+          <p>${randomName} · ${time}</p>
         </div>
         <div class="chat">
           ${messageInputVal}
