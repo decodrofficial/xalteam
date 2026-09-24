@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="manifest" href="/manifest.json">
+	<meta name="theme-color" content="#2F3150">
+  <link rel="stylesheet" href="CSS/styles.css">
+  <title>Discord Assistant</title>
+</head>
+  <body>
+    <nav>
+      <div class="left">
+      <i class="fa-brands fa-discord robo" ></i>
+      <p>Discord Assistant</p>
+      </div>
+      <div class="right">
+        <i class="fa-solid fa-bell"></i>
+          <a href="settings.html">
+            <i class="fa-solid fa-circle-user"></i>
+          </a>
+      </div>
+    </nav>
+    
+    <div class="hero">
+      <div class="hero1">
+        <h1>Welcome back, <span class="name-span">Alex!</span></h1>
+        <p>Here's what's happening today.</p>
+      </div>
+      <section class="dashboard-cards">
+        <div class="card-row">
+          <div class="card announcement">
+            <div class="card-header">
+              <i class="fa-regular fa-hard-drive"></i> Announcements
+            </div>
+            <div class="card-body">
+              <span>Server Meeting</span> at 3PM
+            </div>
+          </div>
+      
+          <div class="card task">
+            <div class="card-header">
+              <i class="fa-brands fa-stack-exchange"></i> Tasks List
+            </div>
+            <div class="card-body">
+              5 Tasks Pending
+            </div>
+          </div>
+        </div>
+      
+        <div class="card full">
+          <div class="card-header event">
+            <i class="fa-solid fa-calendar"></i> Upcoming Events
+          </div>
+          <div class="card-body">
+            Game Night – Tomorrow
+          </div>
+        </div>
+      </section>
+      
+      <section class="chat-sect">
+        <h2>Team Chats</h2>
+        <div class="container">
+          <div class="main">
+            <div class="pic"><i class="fa-solid fa-circle-user"></i>
+            </div>
+            <div class="flex">
+              <div class="name">
+                <p>Sam</p>
+              </div>
+              <div class="chat">
+                Don't forget about the meeting at 3PM.
+              </div>
+            </div>
+          </div>
+          <div class="main">
+            <div class="pic"><i class="fa-solid fa-circle-user"></i>
+            </div>
+            <div class="flex">
+              <div class="name">
+                <p>Luna</p>
+              </div>
+              <div class="chat">
+                Got it! I'll be there. 👍
+              </div>
+            </div>
+          </div>
+          <div class="main">
+            <div class="pic"><i class="fa-solid fa-circle-user"></i>
+            </div>
+            <div class="flex">
+              <div class="name">
+                <p>Nate</p>
+              </div>
+              <div class="chat">
+                Working on the project plan I'll share it soon.
+              </div>
+            </div>
+          </div>
+          <div class="main">
+            <div class="pic"><i class="fa-solid fa-circle-user"></i>
+            </div>
+            <div class="flex">
+              <div class="name">
+                <p>EventBot</p>
+              </div>
+              <div class="chat">
+                Reminder: <span>Game Night</span> tomorrow at 8PM!🖲️
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex2">
+          <div class="message-box">
+            <span class="span1">🙂</span>
+            <span class="span2">&#124;</span>
+            <input class="message-input" type="text" placeholder="Message #general...">
+            <button class="send-message"><i class="fa-solid fa-arrow-up"></i></button>
+          </div>
+          <!--
+          <div class="send">
+            <i class="fa-solid fa-arrow-up"></i>
+          </div>
+          -->
+        </div>
+      </section>
+    </div>
+    
+    <footer>
+      <div class="footer">
+        <i class="fa-solid fa-house"></i> 
+        <p>Home</p>
+      </div>
+      <div class="footer">
+        <i class="fa-solid fa-user-group"></i>
+        <p>Teams</p>
+      </div>
+      <div class="footer">
+        <i class="fa-solid fa-check"></i>
+        <p>Tasks</p>
+      </div>
+      <div class="footer">
+        <i class="fa-solid fa-calendar"></i>
+        <p>Calendar</p>
+      </div>
+
+      
+    </footer>
+      <!--
+        <input type="text" onkeydown="showKey(event)">
+        <p id="output"></p>
+      -->
+      <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+      <script src="JS/script.js"></script>
+  </body>
+</html>

@@ -40,6 +40,10 @@ nav p{
   align-items: center;
 }
 
+.right a{
+  color: #fff;
+}
+
 .right i:last-child{
   font-size: 1.5rem;
 }

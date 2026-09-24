@@ -1,158 +1,132 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous"
-    referrerpolicy="no-referrer" />
-  <link rel="manifest" href="/manifest.json">
-	<meta name="theme-color" content="#2F3150">
-  <link rel="stylesheet" href="styles.css">
-  <title>Discord Assistant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="CSS/login.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  >
+
+  <title>Login - Xalteam</title>
 </head>
-  <body>
-    <nav>
-      <div class="left">
-      <i class="fa-brands fa-discord robo" ></i>
-      <p>Discord Assistant</p>
-      </div>
-      <div class="right">
-        <i class="fa-solid fa-bell"></i>
-        <i class="fa-solid fa-circle-user"></i>
-      </div>
-    </nav>
-    
-    <div class="hero">
-      <div class="hero1">
-        <h1>Welcome back, Alex!</h1>
-        <p>Here's what's happening today.</p>
-      </div>
-      <section class="dashboard-cards">
-        <div class="card-row">
-          <div class="card announcement">
-            <div class="card-header">
-              <i class="fa-regular fa-hard-drive"></i> Announcements
-            </div>
-            <div class="card-body">
-              <span>Server Meeting</span> at 3PM
-            </div>
-          </div>
-      
-          <div class="card task">
-            <div class="card-header">
-              <i class="fa-brands fa-stack-exchange"></i> Tasks List
-            </div>
-            <div class="card-body">
-              5 Tasks Pending
-            </div>
-          </div>
-        </div>
-      
-        <div class="card full">
-          <div class="card-header event">
-            <i class="fa-solid fa-calendar"></i> Upcoming Events
-          </div>
-          <div class="card-body">
-            Game Night – Tomorrow
-          </div>
-        </div>
-      </section>
-      
-      <section class="chat-sect">
-        <h2>Team Chats</h2>
-        <div class="container">
-          <div class="main">
-            <div class="pic"><i class="fa-solid fa-circle-user"></i>
-            </div>
-            <div class="flex">
-              <div class="name">
-                <p>Sam</p>
-              </div>
-              <div class="chat">
-                Don't forget about the meeting at 3PM.
-              </div>
-            </div>
-          </div>
-          <div class="main">
-            <div class="pic"><i class="fa-solid fa-circle-user"></i>
-            </div>
-            <div class="flex">
-              <div class="name">
-                <p>Luna</p>
-              </div>
-              <div class="chat">
-                Got it! I'll be there. 👍
-              </div>
-            </div>
-          </div>
-          <div class="main">
-            <div class="pic"><i class="fa-solid fa-circle-user"></i>
-            </div>
-            <div class="flex">
-              <div class="name">
-                <p>Nate</p>
-              </div>
-              <div class="chat">
-                Working on the project plan I'll share it soon.
-              </div>
-            </div>
-          </div>
-          <div class="main">
-            <div class="pic"><i class="fa-solid fa-circle-user"></i>
-            </div>
-            <div class="flex">
-              <div class="name">
-                <p>EventBot</p>
-              </div>
-              <div class="chat">
-                Reminder: <span>Game Night</span> tomorrow at 8PM!🖲️
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex2">
-          <div class="message-box">
-            <span class="span1">🙂</span>
-            <span class="span2">&#124;</span>
-            <input class="message-input" type="text" placeholder="Message #general...">
-            <button class="send-message"><i class="fa-solid fa-arrow-up"></i></button>
-          </div>
-          <!--
-          <div class="send">
-            <i class="fa-solid fa-arrow-up"></i>
-          </div>
-          -->
-        </div>
-      </section>
-    </div>
-    
-    <footer>
-      <div class="footer">
-        <i class="fa-solid fa-house"></i> 
-        <p>Home</p>
-      </div>
-      <div class="footer">
-        <i class="fa-solid fa-user-group"></i>
-        <p>Teams</p>
-      </div>
-      <div class="footer">
-        <i class="fa-solid fa-check"></i>
-        <p>Tasks</p>
-      </div>
-      <div class="footer">
-        <i class="fa-solid fa-calendar"></i>
-        <p>Calendar</p>
+
+<body>
+
+  <main class="login-page">
+
+    <section class="login-card">
+
+      <!-- Logo -->
+      <div class="logo">
+        <i class="fa-solid fa-users"></i>
       </div>
 
-      
-    </footer>
-      <!--
-        <input type="text" onkeydown="showKey(event)">
-        <p id="output"></p>
-      -->
-      <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
-      <script src="script.js"></script>
-  </body>
+      <h1>Welcome back</h1>
+
+      <p class="login-subtitle">
+        Sign in to your Xalteam account
+      </p>
+
+
+      <!-- Login Form -->
+      <form class="login-form">
+
+        <!-- Email -->
+        <div class="input-group">
+          <label for="email">Email</label>
+
+          <div class="input-wrapper">
+            <i class="fa-solid fa-envelope"></i>
+
+            <input
+              type="email"
+              id="email"
+              class="email-input"
+              placeholder="Enter your email"
+              autocomplete="email"
+            >
+          </div>
+        </div>
+
+
+        <!-- Password -->
+        <div class="input-group">
+          <div class="password-label">
+            <label for="password">Password</label>
+
+            <a href="#" class="forgot-password">
+              Forgot password?
+            </a>
+          </div>
+
+          <div class="input-wrapper">
+            <i class="fa-solid fa-lock"></i>
+
+            <input
+              type="password"
+              id="password"
+              class="password-input"
+              placeholder="Enter your password"
+              autocomplete="current-password"
+            >
+
+            <button
+              type="button"
+              class="show-password"
+              aria-label="Show password"
+            >
+              <i class="fa-solid fa-eye"></i>
+            </button>
+          </div>
+        </div>
+
+
+        <!-- Remember me -->
+        <div class="remember-container">
+
+          <label class="remember-label">
+            <input type="checkbox" class="remember-checkbox">
+            <span>Remember me</span>
+          </label>
+
+        </div>
+
+
+        <!-- Login button -->
+        <button class="login-button">
+          Log In
+        </button>
+
+      </form>
+
+
+      <!-- Divider -->
+      <div class="divider">
+        <span>or</span>
+      </div>
+
+
+      <!-- Other login options -->
+      <button class="google-button" type="button">
+        <i class="fa-brands fa-google"></i>
+        Continue with Google
+      </button>
+
+
+      <!-- Sign up -->
+      <p class="signup-text">
+        Don't have an account?
+        <a href="signup.html">Create an account</a>
+      </p>
+
+    </section>
+
+  </main>
+
+  <script type="module" src="JS/login.js"></script>
+</body>
 </html>

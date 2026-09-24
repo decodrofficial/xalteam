@@ -1,5 +1,10 @@
 let messageInput = document.querySelector('.message-input');
 const sendBtn = document.querySelector('.send-message');
+const nameSpan = document.querySelector('.name-span');
+
+const pass = localStorage.getItem('password');
+
+nameSpan.innerHTML = `${pass}!`;
 
 const names = [
   'Sam',
