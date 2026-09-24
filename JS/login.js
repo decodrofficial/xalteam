@@ -2,6 +2,15 @@ const emailInput = document.querySelector('.email-input');
 const passwordInput = document.querySelector('.password-input');
 const login = document.querySelector('.login-form');
 
+let show = document.querySelector('.show-password');
+let password = document.querySelector('.password-input');
+
+show.onclick = function() {
+  if (password.type === 'password') {
+    password.type = 'text';
+  }
+}
+
 login.addEventListener('submit', (event) => {
   event.preventDefault();
 
